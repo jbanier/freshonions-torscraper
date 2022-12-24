@@ -20,3 +20,4 @@ python-memcached
 pillow
 werkzeug==0.15.3
 timeout-decorator
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
