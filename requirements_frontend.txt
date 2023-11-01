@@ -18,5 +18,5 @@ pycountry
 networkx
 python-memcached
 pillow
-werkzeug==0.15.3
+werkzeug==3.0.1
 timeout-decorator
