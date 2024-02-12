@@ -11,7 +11,7 @@ $SCRIPTDIR/extract_from_url.sh https://www.reddit.com/r/darknetmarkets/wiki/supe
 echo "[?} VALID LIST:"
 cat $LIST
 echo "[+] Marking genuine ... "
-$SCRIPTDIR/make_genuine.py $LIST
+python $SCRIPTDIR/make_genuine.py $LIST
 echo "[+] Updating fakes from clone groups ... "
 $SCRIPTDIR/update_clone_fakes.sh
 rm $LIST

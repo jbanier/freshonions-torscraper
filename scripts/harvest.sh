@@ -5,7 +5,7 @@ LIST=`mktemp`
 LIST2=`mktemp`
 TOR2WEB_JSON=`mktemp`
 http_proxy="" https_proxy="" wget --no-check-certificate -O $TOR2WEB_JSON https://eqt5g4fuenphqinx.tor2web.org/antanistaticmap/stats/yesterday
-$SCRIPTDIR/import_tor2web.py $TOR2WEB_JSON > $LIST
+python $SCRIPTDIR/import_tor2web.py $TOR2WEB_JSON > $LIST
 rm "$TOR2WEB_JSON"
 #$SCRIPTDIR/extract_from_url.sh 'https://onion.cab/list.php?a=list' >> $LIST
 $SCRIPTDIR/extract_from_url.sh 'https://www.reddit.com/r/onions/search?q=url%3A.onion&sort=new&restrict_sr=on' >> $LIST
