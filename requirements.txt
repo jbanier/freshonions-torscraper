@@ -18,7 +18,7 @@ pycountry
 networkx
 python-memcached
 pillow
-werkzeug==3.0.1
+werkzeug==3.0.6
 timeout-decorator
 bitcoin
 markupsafe==2.0.1
